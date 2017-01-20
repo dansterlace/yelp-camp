@@ -6,17 +6,17 @@ var data        =   [
         {
             name: "Jerkstore",
             image: "http://photosforclass.com/download/7626464792",
-            description: "blah blah blah"
+            description: "Shankle ball tip beef ribs pastrami beef drumstick jerky flank rump pig ham sirloin. Kevin meatball ribeye, porchetta hamburger swine prosciutto kielbasa corned beef biltong picanha. Meatball frankfurter ham, meatloaf picanha cow sirloin drumstick. Beef fatback capicola, brisket pastrami chuck burgdoggen alcatra."
         },
         {
             name: "Hachi Machi",
             image: "http://photosforclass.com/download/5641024448",
-            description: "example text"
+            description: "Shankle ball tip beef ribs pastrami beef drumstick jerky flank rump pig ham sirloin. Kevin meatball ribeye, porchetta hamburger swine prosciutto kielbasa corned beef biltong picanha. Meatball frankfurter ham, meatloaf picanha cow sirloin drumstick. Beef fatback capicola, brisket pastrami chuck burgdoggen alcatra."
         },
         {
             name: "Splendoras",
             image: "http://photosforclass.com/download/4812576807",
-            description: "yargle bargle"
+            description: "Shankle ball tip beef ribs pastrami beef drumstick jerky flank rump pig ham sirloin. Kevin meatball ribeye, porchetta hamburger swine prosciutto kielbasa corned beef biltong picanha. Meatball frankfurter ham, meatloaf picanha cow sirloin drumstick. Beef fatback capicola, brisket pastrami chuck burgdoggen alcatra."
         }
     ]
 
