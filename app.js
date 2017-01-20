@@ -2,8 +2,10 @@ var express     =   require("express"),
     mongoose    =   require("mongoose"),
     app         =   express(),
     bodyParser  =   require("body-parser"),
-    Campground  =   require("./models/campground");
+    Campground  =   require("./models/campground"),
+    seedDB      =   require("./seeds");
 
+seedDB();
 mongoose.connect("mongodb://localhost/yelp_camp");
 
 // Campground.create(
@@ -62,18 +64,19 @@ app.get("/campgrounds/new", function(req, res){
     res.render("new.ejs");
 });
 
-//SHOW - campground detail view
+// SHOW - shows more info about one campground
 app.get("/campgrounds/:id", function(req, res){
     //find the campground with provided ID
-    Campground.findById(req.params.id, function(err, foundCampground){
+    Campground.findById(req.params.id).populate("comments").exec(function(err, foundCampground){
         if(err){
             console.log(err);
         } else {
+            console.log(foundCampground)
             //render show template with that campground
             res.render("show", {campground: foundCampground});
         }
     });
-});
+})
 
 app.listen(process.env.PORT, process.env.IP, function(){
     console.log("The YelpCamp server has started");
